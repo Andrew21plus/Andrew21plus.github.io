@@ -3,6 +3,13 @@ function confirma(){
         document.location='./';
         }else{
         alert('Operación Cancelada!')
-        document.location='./';
+        $("form").submit(function(e){
+
+            e.preventDefault();
+       
+            document.location='./';
+       
+        });
+        
          }
 }
