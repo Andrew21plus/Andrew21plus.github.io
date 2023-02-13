@@ -12,6 +12,7 @@
         <link rel="icon" href="images/logo.png">
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
+        <script src="js/envia.js"></script>
     </head>
     <header>
         <nav class="navbar navbar-light bg-light"  >
@@ -45,7 +46,7 @@
                 <h2>Dirección: Ciudadela Juan Montalvo</h2>
                 <p>Teléfonos: (+593) 960517044, (+593) 991735986, (+593) 984330529</p>
                 <p>E-mail: andres.lagos@spoch.edu.ec</p>
-                <form method="post" action="envia.php">
+                <form action="https://formsubmit.co/andres.lagos@espoch.edu.ec" method="POST">
                     <div class="col-mod-6">
                         <input class="form-control" type="text" placeholder="Nombre" name="nombre" > <br>
                         <input class="form-control" type="text" placeholder="Apellido" name="apellido" > <br>
@@ -57,8 +58,9 @@
                     <div class="col-mod-12">
                         <br>
                         <textarea name="Mensaje" id="" cols="60" rows="10" placeholder="Escribe aqui tu problema"></textarea>
-                        <input type="submit">
-                    </div>
+                        <input type="submit" onclick="confirma()">
+                        <input type="hidden" name="_next" value="https://andrew21plus.github.io/CodeHelper.github.io/">
+                        <input type="hidden" name="_captcha" value="false">
                 </form>
             </div>
             <div class="col-md-6">
